@@ -1,9 +1,8 @@
-#include "AvlTree.h"
+#include "./AvlTree/AvlTree.h"
 
 int main(){
-    AvlTree<int, char> Tree;
-    AvlTree<int, char> ::AvlIterator a (Tree.root_);
-    a++;
-    --a;
- 
+   AvlTree<int, char> a;
+   auto res = a.insert("d");
+   std::cout << res.second;
 }    
+   
